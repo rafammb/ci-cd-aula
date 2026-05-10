@@ -1,1 +1,1 @@
-# ci-cd-aula
+Projeto de CI/CD para aprendizado
