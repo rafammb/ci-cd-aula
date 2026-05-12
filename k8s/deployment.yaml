@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ci-cd-aula
+  labels:
+    app: ci-cd-aula
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ci-cd-aula
+  template:
+    metadata:
+      labels:
+        app: ci-cd-aula
+    spec:
+      containers:
+        - name: ci-cd-aula
+          image: r4real/ci-cd-aula:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
