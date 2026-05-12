@@ -17,7 +17,7 @@ const server = app.listen(4000, () => {
       const json = JSON.parse(data);
       
       // Valida se a resposta está correta
-      if (json.imagem) {
+      if (json.mensagem) {
         console.log('✅ Teste passou! API respondendo corretamente');
         server.close();
         process.exit(0); 
