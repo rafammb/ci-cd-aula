@@ -2,9 +2,10 @@
   "name": "ci-cd-aula",
   "version": "1.0.0",
   "description": "API simples para aprender CI/CD",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node src/app.js",
+    "test": "node tests/app.test.js"
   },
   "dependencies": {
     "express": "^4.18.2"
